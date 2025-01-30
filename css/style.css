@@ -1,0 +1,161 @@
+:root {
+    --green: rgb(103, 221, 150);
+    --white: rgb(235, 240, 236);
+    --darkgreen: rgb(26, 126, 34);
+    --yellow: rgb(255, 231, 110);
+}
+
+@font-face {
+    font-family: matcha;
+    src: url(/fonts/GoodMatcha.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: comfortaa;
+    src: url(/fonts/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+    font-family: comfortaa_bold;
+    src: url(/fonts/Comfortaa-Regular.ttf);
+    font-weight: bold;
+}
+
+/* webpage stylings */
+
+* {
+
+    /* 
+        border: 2px green solid;
+    */
+    font-family: comfortaa;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--white);
+    margin: 0px;
+    margin-bottom: -16px;
+}
+
+/* navigation bar styling */
+
+nav {
+    background-color: var(--green);
+    border-radius: 12px;
+    box-shadow:  3px 3px #3f8a5d,
+             -3px -3px #7affb1;
+    width: 60%;
+    margin: auto;
+    margin-top: 1%;
+    padding: 0.5%;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    padding-bottom: 2;
+    flex-wrap: wrap;
+}
+
+nav > a {
+    font-family: matcha;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.4em;
+    text-align: center;
+    display: inline-block;
+    border-bottom: transparent 4px solid;
+    padding: 0px 10px;
+}
+
+nav p {
+    font-size: 0.6em;
+    font-family: matcha;
+    margin: 0%;
+}
+
+nav i {
+    font-size: 1.5em;
+}
+
+nav p, i {
+    filter: drop-shadow(1px 2px 0px rgba(0, 0, 0, 0.442));
+}
+a:hover * {
+    filter: drop-shadow(-1px -2px 0px rgba(37, 94, 42, 0.442));
+}
+a:active {
+    color: #d6d6d6;
+}
+a:hover, .active-page {
+    border-bottom: var(--yellow) 4px solid;
+}
+
+h1 {
+    font-family: matcha;
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    font-family: matcha;
+    font-size: 2.2em;
+}
+
+.main-container {
+    background-color: var(--white);
+    width: 60%;
+    margin: auto;
+    padding: 0.5%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+section {
+    background-color: var(--green);
+    padding: 0.5%;
+    border-radius: 12px;
+    padding: 2%;
+}
+
+footer {
+    background-color: var(--green);
+    text-align: center;
+    padding: 3px;
+    margin-top: 6%;
+    font-size: 0.7em;
+}
+
+/* contact form */
+.contact-form {
+    background-color: var(--green);
+    border-radius: 15px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.contact-form input, select, textarea {
+    background-color: var(--white);
+    border: 2px solid var(--darkgreen);
+    border-radius: 5px;
+    padding: 25px;
+    width: 100%;
+    margin: auto;
+}
+.contact-form button {
+    background-color: var(--green);
+    border: 2px solid var(--darkgreen);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: matcha;
+    color: var(--darkgreen);
+    font-size: 1.5em;
+}
+.contact-form button:hover {
+    color: var(--white);
+    border-color: var(--white);
+}
