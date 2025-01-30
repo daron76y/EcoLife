@@ -7,18 +7,18 @@
 
 @font-face {
     font-family: matcha;
-    src: url(/fonts/GoodMatcha.otf);
+    src: url(../fonts/GoodMatcha.otf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: comfortaa;
-    src: url(/fonts/Comfortaa-Regular.ttf);
+    src: url(../fonts/Comfortaa-Regular.ttf);
 }
 
 @font-face {
     font-family: comfortaa_bold;
-    src: url(/fonts/Comfortaa-Regular.ttf);
+    src: url(../fonts/Comfortaa-Regular.ttf);
     font-weight: bold;
 }
 
