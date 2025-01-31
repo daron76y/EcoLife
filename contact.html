@@ -9,7 +9,7 @@
     </head>
     <body>
         <!-- navigation bar -->
-        <nav>
+        <nav class="glass">
             <a  href="index.html">
                 <i class="fa-solid fa-house"></i>
                 <p> Home </p>
@@ -41,18 +41,21 @@
         </nav>
         <h1> Contact </h1>
         <div class="main-container">
-            <form class="contact-form">
+            <form class="contact-form glass">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Email Address" required>
-                <select name="Subject">
-                    <option> Website Help </option>
-                    <option> Account / Profile </option>
-                    <option> Learn Page </option>
-                    <option> Report a User </option>
-                    <option> Business </option>
-                    <option> Other </option>
+                <select name="Subject" required>
+                    <option value="" disabled selected hidden> Email Subject </option>
+                    <option value="websiteHelp"> Website Help </option>
+                    <option value="accountProfile"> Account / Profile </option>
+                    <option value="learn"> Learn Page </option>
+                    <option value="report"> Report a User </option>
+                    <option value="business"> Business </option>
+                    <option value="other"> Other </option>
                 </select>
                 <textarea name="message" placeholder="Your Message:" required></textarea>
+                <label for="check"> I confirm that by sending an email, my email address is visible to the response staff at EcoLife </label>
+                <input type="checkbox" id="check" required>
                 <button type="submit">  Send Email</button>
             </form>
         </div>
