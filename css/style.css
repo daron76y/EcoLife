@@ -37,7 +37,7 @@ body {
     background-color: var(--white);
     margin: 0px;
     margin-bottom: -16px;
-    background-image: url(/images/bg.jpg);
+    background-image: url(images/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
