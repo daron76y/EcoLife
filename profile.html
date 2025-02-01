@@ -40,7 +40,20 @@
             </a>
         </nav>
         <h1> Profile </h1>
-
+        <div class="main-container">
+            <form class="contact-form glass">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="email" name="confirmEmail" placeholder="Confirm Email Address" required>
+                <input type="password" name="pass" placeholder="Password" required>
+                <input type="password" name="confirmPass" placeholder="Confirm Password" required>
+                <label for="birthdate"> Date of Birth: </label>
+                <input type="date" id="birthdate" required>
+                <label for="check"> I have read and agree to the <a href="files/EcoLifeTermsAndConditions.pdf">Terms and Conditions</a> and <a href="files/EcoLifePrivacyPolicy.pdf">Privacy Policy</a>.</label>
+                <input type="checkbox" id="check" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
         <footer>
             <p>
                 Made by Daron Yaziciyan, Kishan Jayakumar, Oluwatobi Kasumu. 2025-01-29. All rights reserved. Icons by FontAwesome. Fonts from Dafont.com
