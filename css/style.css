@@ -24,6 +24,11 @@
 
 /* webpage stylings */
 
+span.green {
+    color: var(--green);
+    font-weight: bold;
+}
+
 * {
 
     /* 
@@ -93,11 +98,32 @@ a:hover, .active-page {
     border-bottom: var(--yellow) 4px solid;
 }
 
+.home-splash {
+    width: 15%;
+    height: max-content;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: -1%;
+    z-index: -1;
+}
+
 h1 {
     font-family: matcha;
     font-size: 4em;
     text-align: center;
     text-shadow: 0px 8px 16px rgba(0, 0, 0, 0.178);
+}
+h1.user-count {
+    font-size: 9em;
+    margin-top: 1.5%;
+    color: var(--green);
+    text-shadow: 0px 8px 0px var(--darkgreen);
+}
+.tagline {
+    margin: auto;
+    margin-top: -2%;
+    width: 60%;
+    text-align: center;
 }
 
 h2 {
