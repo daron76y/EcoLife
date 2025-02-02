@@ -30,7 +30,6 @@ span.green {
 }
 
 * {
-
     /* 
         border: 2px green solid;
     */
@@ -59,7 +58,7 @@ nav {
     justify-content: space-evenly;
     position: sticky;
     top: 0;
-    padding-bottom: 2;
+    padding-bottom: 2px;
     flex-wrap: wrap;
     z-index: 1;
 }
@@ -94,7 +93,7 @@ a:hover * {
 a:active {
     color: #d6d6d6;
 }
-a:hover, .active-page {
+nav a:hover, .active-page {
     border-bottom: var(--yellow) 4px solid;
 }
 
@@ -105,6 +104,24 @@ a:hover, .active-page {
     margin-left: 7%;
     margin-top: -1%;
     z-index: -1;
+}
+
+.sign-up-redirect {
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid var(--darkgreen);
+    color: var(--darkgreen);
+    font-family: matcha;
+    font-size: 2em;
+    background-color: var(--green);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.sign-up-redirect:hover {
+    background-color: var(--white);
 }
 
 h1 {
@@ -141,7 +158,7 @@ main {
     row-gap: 15px;
 }
 
-section {
+section, div.glass {
     padding: 0.5%;
     border-radius: 12px;
     padding: 2%;
@@ -201,8 +218,11 @@ footer {
     border: 2px solid var(--darkgreen);
     border-radius: 5px;
     padding: 25px;
-    width: 100%;
+    width: 93%; /* do this or else the input white boxes will overflow the form element */
     margin: auto;
+}
+.contact-form > select {
+    width: 100%; /* do this to fix the select element in contact.html not being thin for some reason */
 }
 .contact-form > label {
     margin: auto;
