@@ -45,9 +45,9 @@
         <h1> Contact </h1>
         <main>
             <form class="contact-form glass">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <select name="Subject" required>
+                <input type="text" name="name" placeholder="Your Name" id="name-input" required>
+                <input type="email" name="email" placeholder="Email Address" id="email-input" required>
+                <select name="Subject" id="subject-select" required>
                     <option value="" disabled selected hidden> Email Subject </option>
                     <option value="websiteHelp"> Website Help </option>
                     <option value="accountProfile"> Account / Profile </option>
@@ -57,7 +57,7 @@
                     <option value="concerns"> Concerns about Terms and Conditions or Privacy Policy</option>
                     <option value="other"> Other </option>
                 </select>
-                <textarea name="message" placeholder="Your Message:" required></textarea>
+                <textarea name="message" placeholder="Your Message:" id="message-input" required></textarea>
                 <label for="check"> I confirm that by sending an email, my email address is visible to the response staff at Eco Life </label>
                 <input type="checkbox" id="check" required>
                 <button type="submit">  Send Email</button>

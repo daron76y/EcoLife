@@ -45,15 +45,15 @@
         <h1> Sign Up </h1>
         <main>
             <form class="contact-form glass">
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="email" name="confirmEmail" placeholder="Confirm Email Address" required>
-                <input type="password" name="pass" placeholder="Password" required>
-                <input type="password" name="confirmPass" placeholder="Confirm Password" required>
+                <input type="text" name="username" placeholder="Username" id="signup-username" required>
+                <input type="email" name="email" placeholder="Email Address" id="signup-email" required>
+                <input type="email" name="confirmEmail" placeholder="Confirm Email Address" id="signup-confirm-email" required>
+                <input type="password" name="pass" placeholder="Password" id="signup-password" required>
+                <input type="password" name="confirmPass" placeholder="Confirm Password" id="signup-confirm-password" required>
                 <label for="birthdate"> Date of Birth: </label>
                 <input type="date" id="birthdate" required>
-                <label for="check"> I have read and agree to the <a href="files/EcoLifeTermsAndConditions.pdf">Terms and Conditions</a> and <a href="files/EcoLifePrivacyPolicy.pdf">Privacy Policy</a>.</label>
-                <input type="checkbox" id="check" required>
+                <label for="signup-check"> I have read and agree to the <a href="files/EcoLifeTermsAndConditions.pdf">Terms and Conditions</a> and <a href="files/EcoLifePrivacyPolicy.pdf">Privacy Policy</a>.</label>
+                <input type="checkbox" id="signup-check" required>
                 <button type="submit">Register</button>
             </form>
         </main>
