@@ -81,6 +81,9 @@ nav p, i {
     filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.442));
 }
 
+a {
+    transition: color 0.5s;
+}
 a:active {
     color: #d6d6d6;
 }
@@ -97,6 +100,7 @@ nav a:hover, .active-page {
     text-align: center;
     width: 50%;
     margin: auto;
+    margin-bottom: 2%;
     padding: 3vw;
     border: 3px solid var(--darkgreen);
     color: var(--darkgreen);
@@ -105,9 +109,12 @@ nav a:hover, .active-page {
     background-color: var(--green);
     border-radius: 10px;
     text-decoration: none;
+    transition: background-color 1s, font-size 1s, padding 1s;
 }
 .sign-up-redirect:hover {
     background-color: var(--white);
+    font-size: min(1.1em, 4.5vw);
+    padding: 2.9vw;
 }
 
 h1 {
