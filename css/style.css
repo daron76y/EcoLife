@@ -90,6 +90,9 @@ nav p, i {
 a:hover * {
     filter: drop-shadow(-1px -2px 0px rgba(37, 94, 42, 0.442));
 }
+a {
+    transition: color 0.5s;
+}
 a:active {
     color: #d6d6d6;
 }
@@ -109,7 +112,8 @@ nav a:hover, .active-page {
 .sign-up-redirect {
     display: block;
     text-align: center;
-    width: 30%;
+    width: 30vw;
+    max-height: 2.5vw;
     margin: auto;
     padding: 20px;
     border: 3px solid var(--darkgreen);
@@ -119,9 +123,11 @@ nav a:hover, .active-page {
     background-color: var(--green);
     border-radius: 10px;
     text-decoration: none;
+    transition: background-color 1s, font-size 1s;
 }
 .sign-up-redirect:hover {
     background-color: var(--white);
+    font-size: min(2.2em, 4.5vw);
 }
 
 h1 {
@@ -131,7 +137,7 @@ h1 {
     text-shadow: 0px 8px 16px rgba(0, 0, 0, 0.178);
 }
 h1.user-count {
-    font-size: 9em;
+    font-size: 10vw;
     margin-top: 1.5%;
     color: var(--green);
     text-shadow: 0px 8px 0px var(--darkgreen);
@@ -193,6 +199,12 @@ figure > figcaption {
 }
 ul {
     display: inline-block;
+}
+
+.float-img {
+    float: right;
+    width: 30%;
+    margin: 10px;
 }
 
 footer {
@@ -282,20 +294,19 @@ footer {
 
 /* posts board */
 .post-board {
-    align-content: flex-start;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    justify-items: center;
+    row-gap: 2%;
 }
 .polaroid {
     border: 2px rgb(175, 175, 175) outset;
-    width: 200px;
-    height: 250px;
+    width: 90%;
+    height: fit-content;
     background-color: var(--white);
-    padding: 20px;
-    padding-top: 30px;
-    padding-bottom: 70px;
+    padding: 2%;
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
 .polaroid img {
     width: 100%;
@@ -312,4 +323,5 @@ footer {
 }
 .post-user {
     font-size: 0.7em;
+    font-style: oblique;
 }
