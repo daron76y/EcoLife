@@ -14,7 +14,8 @@ if (localStorage && localStorage.getItem("currentUser")) {
     }
 }
 
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname.includes("index.html")) {
+    console.log("dadsadasd");
     let userCount = 0;
     let userCountDiv = document.getElementsByClassName("user-count")[0];
     let timer = setInterval(function() {
