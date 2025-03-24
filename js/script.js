@@ -26,3 +26,6 @@ if (window.location.pathname.includes("index.html")) {
         }
     }, 10);
 }
+else {
+    console.log("not it ");
+}
