@@ -241,6 +241,7 @@ footer {
     font-family: matcha;
     color: var(--darkgreen);
     font-size: min(1.5em, 5vw);
+    transition: background-color 0.2s, border-color 0.2s;
 }
 
 .contact-form button:hover {
@@ -265,6 +266,11 @@ footer {
     border-radius: 30px;
 }
 
+.board-user:first-child {
+    color: var(--yellow);
+    text-shadow: 2px 2px 2px black;
+}
+
 .board-user img {
     max-width: 10%;
     border-radius: 100%;
@@ -286,11 +292,6 @@ footer {
     width: 50%;
     border-radius: 30px;
     border: 3px solid var(--darkgreen);
-}
-
-.leader {
-    color: var(--yellow);
-    text-shadow: 2px 2px 2px black;
 }
 
 /* posts board */
@@ -320,7 +321,7 @@ footer {
 }
 
 .fa-thumbs-up {
-    color: var(--green);
+    color: #a9a9a9;
 }
 
 .likes {
@@ -332,4 +333,115 @@ footer {
 .post-user {
     font-size: 0.7em;
     font-style: oblique;
+}
+
+#newPostBtn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--green);
+    font-size: 3em;
+    color: var(--darkgreen);
+    border: solid 5px var(--darkgreen);
+    position: fixed;
+    right: calc(50% - 40px);
+    bottom: 5%;
+    box-shadow: 0px 0px 10px black;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s, transform 0.5s;
+}
+
+#newPostBtn:hover, #newPostBtn.active {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+#newPostBtn:active {
+    background-color: var(--darkgreen);
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.post-input-field {
+    position: fixed;
+    bottom: 17%;
+    right: calc(50% - 37.5%);
+    width: 75%;   
+    height: 60px;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    gap: 10px;
+    transition: visibility 0.2s, opacity 0.2s;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.post-input-field.visible-inputs {
+    visibility: visible;
+    opacity: 1;
+}
+
+.post-input-field * {
+    width: 100%;
+}
+
+.post-input-field input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.post-input-field input[type="text"]:hover {
+    background-color: #d6d6d6;
+}
+
+#postBtn {
+    background-color: var(--green);
+    border: solid 2px var(--darkgreen);
+    border-radius: 10px;
+    width: 250px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+#postBtn:hover {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/* sign up & log in  */
+.errorMessages {
+    font-size: 0.9em;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.loginSignupRedirect {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.loginSignupRedirect > a {
+    text-decoration: none;
+}
+
+.loginSignupRedirect > a:hover {
+    text-decoration: underline;
+}
+
+/* profile */
+#logoutBtn {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: var(--green);
+    border: 2px var(--darkgreen) solid;
+    color: var(--darkgreen);
+    font-weight: bold;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+#logoutBtn:hover {
+    color: var(--white);
+    border-color: var(--white);
 }

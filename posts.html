@@ -8,7 +8,10 @@
         <link href="css/style-900.css" rel="stylesheet" media="screen and (max-width: 900px)">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <meta name="mobile-web-app-capable" content="yes">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/posts.js" defer></script>
+        <script type="text/javascript" src="js/script.js" defer></script>
     </head>
     <body>
         <!-- navigation bar -->
@@ -37,9 +40,9 @@
                 <i class="fa-solid fa-images"></i>
                 <p> Posts </p>
             </a>
-            <a href="profile.html"> 
+            <a href="signup.html"> 
                 <i class="fa-solid fa-circle-user"></i>
-                <p> Profile </p>
+                <p> Sign Up </p>
             </a>
         </nav>
         <h1> Trending Posts </h1>
@@ -47,6 +50,7 @@
             <div class="glass">
                 <div class="post-board">
                     <!-- polaroid separator -->
+                    <!--
                     <div class="polaroid">
                         <img src="images/bg.jpg" alt="user post">
                         <p class="post-name">
@@ -56,53 +60,19 @@
                             Username
                         </p>
                         <p class="likes">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            500
+                            <i class="fa-solid fa-thumbs-up" onclick="likePost(event)"></i>
+                            <span>500</span>
                         </p>
                     </div>
-                    <!-- polaroid separator -->
-                    <div class="polaroid">
-                        <img src="images/bg.jpg" alt="user post">
-                        <p class="post-name">
-                            Post name
-                        </p>
-                        <p class="post-user">
-                            Username
-                        </p>
-                        <p class="likes">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            500
-                        </p>
-                    </div>
-                    <!-- polaroid separator -->
-                    <div class="polaroid">
-                        <img src="images/bg.jpg" alt="user post">
-                        <p class="post-name">
-                            Post name
-                        </p>
-                        <p class="post-user">
-                            Username
-                        </p>
-                        <p class="likes">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            500
-                        </p>
-                    </div>
-                    <!-- polaroid separator -->
-                    <div class="polaroid">
-                        <img src="images/bg.jpg" alt="user post">
-                        <p class="post-name">
-                            Post name
-                        </p>
-                        <p class="post-user">
-                            Username
-                        </p>
-                        <p class="likes">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            500
-                        </p>
-                    </div>
+                    -->
+                    <p> No Posts Yet. Go Make Some! </p>
                 </div>
+            </div>
+            <button id="newPostBtn" style="transform: rotate(0deg);" onclick="showInputField(event)" onmouseenter="rotateBtn(event)">+</button>
+            <div class="glass post-input-field">
+                <input type="file" accept="image/*" name="image" id="image-input">
+                <input type="text" name="postname" id="postname-input" placeholder="Title for your Post" required>
+                <button id="postBtn" onclick="postPolaroid()"> Post! </button>
             </div>
         </main>
         <footer>

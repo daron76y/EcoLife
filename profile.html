@@ -8,7 +8,10 @@
         <link href="css/style-900.css" rel="stylesheet" media="screen and (max-width: 900px)">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <meta name="mobile-web-app-capable" content="yes">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/profile.js" defer></script>
+        <script type="text/javascript" src="js/script.js" defer></script>
     </head>
     <body>
         <!-- navigation bar -->
@@ -42,20 +45,15 @@
                 <p> Profile </p>
             </a>
         </nav>
-        <h1> Sign Up </h1>
+        <h1> Profile </h1>
         <main>
-            <form class="contact-form glass">
-                <input type="text" name="username" placeholder="Username" id="signup-username" required>
-                <input type="email" name="email" placeholder="Email Address" id="signup-email" required>
-                <input type="email" name="confirmEmail" placeholder="Confirm Email Address" id="signup-confirm-email" required>
-                <input type="password" name="pass" placeholder="Password" id="signup-password" required>
-                <input type="password" name="confirmPass" placeholder="Confirm Password" id="signup-confirm-password" required>
-                <label for="birthdate"> Date of Birth: </label>
-                <input type="date" id="birthdate" required>
-                <label for="signup-check"> I have read and agree to the <a href="files/EcoLifeTermsAndConditions.pdf">Terms and Conditions</a> and <a href="files/EcoLifePrivacyPolicy.pdf">Privacy Policy</a>.</label>
-                <input type="checkbox" id="signup-check" required>
-                <button type="submit">Register</button>
-            </form>
+            <section class="glass">
+                <h2 id="hello-user"> Hello, </h2>
+                <p> 
+                    
+                </p>
+                <button id="logoutBtn" onclick="logOut()"> Log Out </button>
+            </section>
         </main>
         <footer>
             <p>
